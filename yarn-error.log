@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\utilisateur\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --dev @fullhuman/postcss-purgecss npm-run-al
+
+PATH: 
+  C:\Program Files\AdoptOpenJDK\jdk-16.0.0.36-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\utilisateur\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3;;C:\Users\utilisateur\AppData\Roaming\npm;C:\Users\utilisateur\AppData\Local\Programs\Microsoft VS Code\bin;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/npm-run-al: Not found
+      at Request.params.callback [as _callback] (C:\Users\utilisateur\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\utilisateur\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Users\utilisateur\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Users\utilisateur\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "svelte-app",
+    "version": "1.0.0",
+    "private": true,
+  
+    "scripts": {
+      "watch:tailwind": "postcss public/tailwind.css -o public/index.css -w",
+      "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/index.css",
+      "build": "npm run build:tailwind && rollup -c",
+      "start": "sirv public",
+      "serve": "serve public -p 80",
+      "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\""
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^17.0.0",
+      "@rollup/plugin-node-resolve": "^11.0.0",
+      "autoprefixer": "^10.2.5",
+      "concurrently": "^6.0.2",
+      "cross-env": "^7.0.3",
+      "postcss-cli": "^8.3.1",
+      "rollup": "^2.3.4",
+      "rollup-plugin-css-only": "^3.1.0",
+      "rollup-plugin-livereload": "^2.0.0",
+      "rollup-plugin-svelte": "^7.0.0",
+      "rollup-plugin-terser": "^7.0.0",
+      "svelte": "^3.0.0",
+      "tailwindcss": "^2.1.2"
+    },
+    "dependencies": {
+      "sirv-cli": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
