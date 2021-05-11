@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lpm.iml" filepath="$PROJECT_DIR$/.idea/lpm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/svelte-easypaw.iml" filepath="$PROJECT_DIR$/.idea/svelte-easypaw.iml" />
     </modules>
   </component>
 </project>
