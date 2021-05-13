@@ -1,5 +1,6 @@
 <script>
     import Login from "./Login.svelte";
+    
 
     let isLogin = false;
 
@@ -11,8 +12,9 @@
         isLogin = false;
     }
 
+
     function getAnimals() {
-        fetch('http://localhost:8080/Animal')
+        fetch('http://localhost:8080/animal')
             .then(function (response) {
                 return response.json();
             })
@@ -20,6 +22,7 @@
                 console.log(data);
             });
     }
+ 
 </script>
 
 <main>
@@ -34,6 +37,9 @@
         on:click={getAnimals}
         >get animal
     </button>
+
+
+
 
     {#if isLogin}
         <Login on:closeIt={close} />
